@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.amazon.visualizer">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera.ar"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Design.Light.NoActionBar">
+        <activity android:name="com.amazon.visualizer.Summary"/>
+
+        <meta-data
+            android:name="com.google.ar.core"
+            android:value="required" />
+
+        <activity android:name="com.amazon.visualizer.Add_products" />
+        <activity android:name="com.amazon.visualizer.WishlistDetails" />
+        <activity android:name="com.amazon.visualizer.DetailsPage" />
+        <activity android:name="com.amazon.visualizer.SuccessPay" />
+        <activity android:name="com.amazon.visualizer.Payment" />
+        <activity android:name="com.amazon.visualizer.Admin_orderReport" />
+        <activity android:name="com.amazon.visualizer.Admin_userReport" />
+        <activity android:name="com.amazon.visualizer.admin_login" />
+        <activity android:name="com.amazon.visualizer.camera" />
+        <activity android:name="com.amazon.visualizer.cart" />
+        <activity android:name="com.amazon.visualizer.EditProfile" />
+        <activity android:name="com.amazon.visualizer.gallery" />
+        <activity android:name="com.amazon.visualizer.Login" />
+        <activity android:name="com.amazon.visualizer.splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.amazon.visualizer.MainActivity" />
+        <activity android:name="com.amazon.visualizer.profile" />
+        <activity android:name="com.amazon.visualizer.Signup" />
+        <activity android:name="com.amazon.visualizer.wishlist" />
+    </application>
+
+</manifest>
